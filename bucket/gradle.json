@@ -1,20 +1,19 @@
 {
     "homepage": "http://www.gradle.org",
-    "version": "3.4.1",
+    "version": "5.0",
     "license": "Apache 2.0",
-    "hash": "db1db193d479cc1202be843f17e4526660cfb0b21b57d62f3a87f88c878af9b2",
-    "url": "https://services.gradle.org/distributions/gradle-3.4.1-bin.zip",
-    "extract_dir": "gradle-3.4.1",
+    "hash": "6157ac9f3410bc63644625b3b3e9e96c963afd7910ae0697792db57813ee79a6",
+    "url": "https://services.gradle.org/distributions/gradle-5.0-bin.zip",
+    "extract_dir": "gradle-5.0",
     "bin": "bin\\gradle.bat",
     "suggest": {
-        "JDK": [
-            "extras/oraclejdk",
-            "openjdk"
-        ]
+        "JDK": ["extras/oraclejdk", 
+                "openjdk"]
     },
+    "depends": "openjdk",
     "checkver": {
         "url": "https://gradle.org/gradle-download/",
-        "re": "The current Gradle release is version ([\\d.]+)"
+        "re": "Download Gradle ([\\d.]+)"
     },
     "autoupdate": {
         "url": "https://services.gradle.org/distributions/gradle-$version-bin.zip",
